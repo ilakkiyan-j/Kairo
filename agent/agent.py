@@ -137,5 +137,32 @@ async def entrypoint(ctx: JobContext):
     await session.say("KAIRO online. Connected to Site 12 operational context. State your equipment ID or error code.")
 
 
+import threading
+from http.server import HTTPServer, BaseHTTPRequestHandler
+
+class HealthCheckHandler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header("Content-type", "text/plain")
+        self.end_headers()
+        self.wfile.write(b"KAIRO Python Agent Web Service Healthy")
+
+    def log_message(self, format, *args):
+        return
+
+def start_health_check_server():
+    port_str = os.getenv("PORT", "8080")
+    try:
+        port = int(port_str)
+    except ValueError:
+        port = 8080
+    try:
+        server = HTTPServer(("0.0.0.0", port), HealthCheckHandler)
+        logger.info(f"🌐 [Health Check] Started HTTP health check server on port {port}")
+        server.serve_forever()
+    except Exception as e:
+        logger.warning(f"Could not start HTTP health check server: {e}")
+
 if __name__ == "__main__":
+    threading.Thread(target=start_health_check_server, daemon=True).start()
     cli.run_app(WorkerOptions(entrypoint_fnc=entrypoint))

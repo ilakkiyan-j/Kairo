@@ -13,7 +13,7 @@ services:
       - key: LIVEKIT_API_SECRET
         sync: false
 
-  - type: worker
+  - type: web
     name: kairo-python-agent
     env: python
     buildCommand: pip install -r agent/requirements.txt
