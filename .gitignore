@@ -33,15 +33,18 @@ env/
 venv/
 .venv/
 ENV/
-env.bak/
-venv.bak/
 
-# Logs
+# Logs & temporary scratch directories
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+.system_generated/
+.tempmediaStorage/
+scratch/
+*.tmp
+*.temp
 
 # System & OS files
 .DS_Store
