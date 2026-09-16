@@ -10,6 +10,9 @@ KAIRO consists of two core components:
 1. **Frontend UI & API Routes (`frontend/`)**: Built with Next.js 14, React 19, TypeScript, and LiveKit WebRTC client.
 2. **Voice Agent Worker (`agent/agent.py`)**: Python worker process running `livekit-agents` (Deepgram STT + Moss Retriever + Gemini LLM + Cartesia TTS).
 
+> **How Frontend & Backend Connect**: 
+> You **do NOT need to set a Backend URL in the Frontend**. Both Vercel (Frontend) and Render (Backend Agent) connect automatically to the same **LiveKit Cloud Room** using `LIVEKIT_URL`. LiveKit Cloud handles real-time audio streaming, telemetry broadcasting, and data channel communication between them seamlessly.
+
 ---
 
 ## 🚀 Option 1: Vercel + Render / Railway (Recommended & Easiest)
