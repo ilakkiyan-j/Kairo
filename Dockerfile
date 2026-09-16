@@ -16,7 +16,7 @@ RUN pip install --no-cache-dir -r agent/requirements.txt
 # Copy application files and data
 COPY agent/ ./agent/
 COPY data/ ./data/
-COPY .env ./
+COPY .env.example ./.env.example
 
 ENV PYTHONUNBUFFERED=1
 
