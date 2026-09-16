@@ -1,0 +1,47 @@
+[
+  {
+    "equipment_id": "P-204",
+    "site": "Site-12",
+    "name": "High-Pressure Hydraulic Feed Pump",
+    "type": "Industrial Pump",
+    "model": "XJ-400",
+    "status": "Maintenance Required",
+    "operating_pressure": "4.5 to 8.0 bar",
+    "flow_rate": "450 L/min",
+    "power_rating": "75 kW",
+    "location": "Site 12 - Substation B, Bay 4"
+  },
+  {
+    "equipment_id": "P-201",
+    "site": "Site-12",
+    "name": "Primary Coolant Circulation Pump",
+    "type": "Centrifugal Pump",
+    "model": "CP-2000",
+    "status": "Operational",
+    "operating_pressure": "3.0 to 6.0 bar",
+    "flow_rate": "600 L/min",
+    "power_rating": "90 kW",
+    "location": "Site 12 - Substation A, Bay 1"
+  },
+  {
+    "equipment_id": "M-101",
+    "site": "Site-12",
+    "name": "Main Drive Induction Motor",
+    "type": "AC Motor",
+    "model": "MOT-900X",
+    "status": "Operational",
+    "operating_voltage": "415 V",
+    "rpm": "1480 RPM",
+    "location": "Site 12 - Main Compressor Room"
+  },
+  {
+    "equipment_id": "P-308",
+    "site": "Site-05",
+    "name": "Chemical Injection Pump",
+    "type": "Diaphragm Pump",
+    "model": "CHEM-50",
+    "status": "Standby",
+    "operating_pressure": "1.5 to 3.0 bar",
+    "location": "Site 05 - Treatment Plant 2"
+  }
+]

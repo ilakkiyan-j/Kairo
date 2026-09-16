@@ -1,0 +1,56 @@
+[
+  {
+    "code": "E17",
+    "equipment_type": "XJ-400",
+    "severity": "High",
+    "title": "Pressure Sensor Signal Anomaly / Out of Range",
+    "meaning": "The primary discharge pressure sensor (PT-204) feedback signal has deviated by more than 15% from the expected operational threshold (4.5–8.0 bar).",
+    "probable_causes": [
+      "Faulty or loose wiring connection on pressure sensor PT-204",
+      "Sensor membrane blockage or cavitation in hydraulic line",
+      "Calibrated zero-drift on pressure transducer"
+    ],
+    "recommended_checks": [
+      "Step 1: Inspect pressure sensor PT-204 wiring harness and terminal block for loose contacts or moisture.",
+      "Step 2: Verify sensor reading against manual analog gauge PI-204.",
+      "Step 3: Perform zero-point calibration if analog reading matches physical pressure.",
+      "Step 4: Check hydraulic line filter for clogging before replacing transducer."
+    ],
+    "required_safety_procedure": "Site 12 Electrical & Hydraulic Isolation Procedure (ISO-S12-04)"
+  },
+  {
+    "code": "E04",
+    "equipment_type": "XJ-400",
+    "severity": "Medium",
+    "title": "Thermal Overload Warning",
+    "meaning": "Winding temperature on drive motor exceeds 85°C continuously for over 3 minutes.",
+    "probable_causes": [
+      "Cooling fan blockage",
+      "High ambient operating temperature",
+      "Excessive mechanical load"
+    ],
+    "recommended_checks": [
+      "Check cooling fan cowl for debris.",
+      "Verify ventilation intake filters are clean.",
+      "Measure motor phase currents using clamp meter."
+    ],
+    "required_safety_procedure": "Thermal Hazard PPE Standard (ISO-S12-09)"
+  },
+  {
+    "code": "E22",
+    "equipment_type": "CP-2000",
+    "severity": "Critical",
+    "title": "Vibration Threshold Exceeded",
+    "meaning": "Vibration sensor detects RMS velocity > 7.1 mm/s on drive non-drive end bearing.",
+    "probable_causes": [
+      "Shaft misalignment",
+      "Bearing race pitting or wear",
+      "Impeller imbalance"
+    ],
+    "recommended_checks": [
+      "Perform laser alignment check.",
+      "Inspect bearing grease condition for metal particulates."
+    ],
+    "required_safety_procedure": "Lockout Tagout Standard (LOTO-CP-01)"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "procedure_id": "ISO-S12-04",
+    "title": "Site 12 Electrical & Hydraulic Isolation Procedure",
+    "applicable_equipment": ["P-204", "XJ-400", "P-201"],
+    "steps": [
+      "1. Notify Site 12 Duty Supervisor before commencing panel opening.",
+      "2. Disconnect and lock out main 415V breaker CB-204 at Substation B.",
+      "3. Apply personal Lockout Tagout (LOTO) padlock and tag.",
+      "4. Verify Zero Energy State using calibrated digital multimeter on terminals L1, L2, L3.",
+      "5. Close hydraulic suction and discharge isolation valves V-12A and V-12B.",
+      "6. Depressurize hydraulic manifold via bleed valve BV-01 into catch tray before touching sensor PT-204.",
+      "7. Wear Class 0 insulated safety gloves, safety glasses, and arc-flash face shield."
+    ],
+    "mandatory_ppe": ["Arc-flash face shield", "Class 0 insulated gloves", "Steel-toe boots", "Safety glasses"],
+    "emergency_contact": "Site 12 Safety Dispatch: Ext 4409 / Channel 3"
+  },
+  {
+    "procedure_id": "LOTO-CP-01",
+    "title": "General Lockout Tagout Standard Operating Procedure",
+    "applicable_equipment": ["P-201", "M-101", "P-308"],
+    "steps": [
+      "1. Identify all energy sources (electrical, pneumatic, mechanical).",
+      "2. Isolate each source using approved LOTO hardware.",
+      "3. Bleed residual pressure or dissipate stored kinetic/capacitive energy.",
+      "4. Attempt equipment restart to confirm lockout effectiveness."
+    ],
+    "mandatory_ppe": ["Safety glasses", "Cut-resistant gloves", "Hard hat"],
+    "emergency_contact": "Central EHS Desk: Ext 911"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "record_id": "MR-2026-8841",
+    "equipment_id": "P-204",
+    "site": "Site-12",
+    "date": "2026-08-24",
+    "technician": "Sarah Jenkins (Senior Field Specialist)",
+    "component": "Pressure Sensor PT-204",
+    "action": "Inspection, cleaning, and recalibration",
+    "findings": "Sensor terminal block had minor oxidation. Cleaned contacts with electrical contact cleaner. Zero-point recalibrated to 0.00 bar.",
+    "status": "Completed - Passed QA"
+  },
+  {
+    "record_id": "MR-2026-7102",
+    "equipment_id": "P-204",
+    "site": "Site-12",
+    "date": "2026-06-12",
+    "technician": "David Miller",
+    "component": "Hydraulic Seal Kit & O-rings",
+    "action": "Preventive maintenance seal replacement",
+    "findings": "Primary mechanical seal replaced due to minor weepage. Pressure tested to 10.0 bar for 30 minutes without loss.",
+    "status": "Completed"
+  },
+  {
+    "record_id": "MR-2026-9011",
+    "equipment_id": "P-201",
+    "site": "Site-12",
+    "date": "2026-09-01",
+    "technician": "Alex Rivera",
+    "component": "Bearing Assembly",
+    "action": "Grease replenishment with Mobilith SHC 100",
+    "findings": "Normal wear detected. No metallic particles in purged grease.",
+    "status": "Completed"
+  }
+]
