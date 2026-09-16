@@ -29,6 +29,7 @@ KAIRO consists of two core components:
 2. Connect your GitHub repository (`https://github.com/ilakkiyan-j/Kairo.git`).
 3. Select **Free Instance Type**.
 4. Configure Settings:
+   - **Root Directory**: `./` (Leave default repository root so it can access `data/`)
    - **Environment**: `Python 3`
    - **Build Command**: `pip install -r agent/requirements.txt`
    - **Start Command**: `python agent/agent.py start`
